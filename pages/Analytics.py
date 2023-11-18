@@ -22,7 +22,7 @@ st.set_page_config(page_title="Plotting Demo")
 
 st.title('Analytics')
 st.subheader("Average Price per Sqft")
-new_df = pd.read_csv("data_for_viz.csv')
+new_df = pd.read_csv("data_for_viz.csv")
 group_df = new_df.groupby('sector').mean()[['price','pricepersqft','built_up_area','latitude','longitude']]
 group_df.dropna(inplace= True)
 
