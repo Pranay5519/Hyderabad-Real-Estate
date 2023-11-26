@@ -35,7 +35,7 @@ st.plotly_chart(fig , use_container_width=True)
 # Nearest Locations PLot
 st.header("Nearest Locations")
 
-placeslatlong = pd.read_csv(r'C:\Users\HP\Desktop\datasets\flats campusX\hyderbad_places_latlong.csv')
+placeslatlong = pd.read_csv('hyderbad_places_latlong.csv')
 
 group_df1 = group_df.reset_index(drop=False)
 
