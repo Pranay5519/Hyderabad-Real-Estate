@@ -12,7 +12,7 @@ st.set_page_config(page_title="Viz Demo")
 
 df= pd.read_csv("df_final.csv")
 with open("pipeline.pkl",'rb') as file:
-    model = pickle.load(file)
+    model = joblib.load(file)
 
 
 
