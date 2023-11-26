@@ -36,7 +36,8 @@ st.plotly_chart(fig , use_container_width=True)
 st.header("Nearest Locations")
 
 placeslatlong = pd.read_csv('hyderbad_places_latlong.csv')
-
+placeslatlong['Latitude'] = placeslatlong['Latitude'].astype(float)
+placeslatlong['Longitude'] = placeslatlong['Longitude'].astype(float)
 group_df1 = group_df.reset_index(drop=False)
 
 
